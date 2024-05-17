@@ -1,0 +1,14 @@
+2024-05-17 15:14:49,504 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-3] The amount of items before is 0
+2024-05-17 15:14:58,700 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-2] The amount of items before is 16
+2024-05-17 15:14:58,700 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-1] Cropped Stay Groovy off white is chosen
+2024-05-17 15:15:00,441 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-3] The amount of items after is 16
+2024-05-17 15:15:00,557 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-2] The amount of items after is 16
+2024-05-17 15:15:02,299 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-3] The amount of items before is 0
+2024-05-17 15:15:02,555 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-2] The amount of items before is 16
+2024-05-17 15:15:02,599 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-1] Cropped Stay Groovy off white is added to cart
+2024-05-17 15:15:02,984 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-3] The amount of items after is 16
+2024-05-17 15:15:03,226 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-2] The amount of items after is 2
+2024-05-17 15:15:03,555 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-3] The amount of items before is 0
+2024-05-17 15:15:03,957 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-3] The amount of items after is 16
+2024-05-17 15:15:04,289 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-3] The amount of items before is 0
+2024-05-17 15:15:04,491 INFO o.e.ShoppingTest [TestNG-test-shoppingSiteTest-3] The amount of items after is 0
