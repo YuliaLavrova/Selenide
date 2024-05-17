@@ -20,9 +20,10 @@ public class ShoppingTest {
     void addToCartTest() throws InvalidFormatException {
         open("https://react-shopping-cart-67954.firebaseapp.com/");
         String nameOfChosenItem = $(By.cssSelector(".sc-124al1g-4.eeXMBo")).text();
-        LOGGER.info(nameOfChosenItem + " is added to cart");
+        LOGGER.info(nameOfChosenItem + " is chosen");
         $(By.xpath("//button[text() = 'Add to cart']")).click();
         $(By.cssSelector(".sc-11uohgb-2.elbkhN")).shouldHave(text(nameOfChosenItem));
+        LOGGER.info($(By.cssSelector(".sc-11uohgb-2.elbkhN")).text() + " is added to cart");
     }
 
     @Test
