@@ -89,11 +89,11 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.2.5</version>
+          <version>3.13.0</version>
           <configuration>
             <suiteXmlFiles>
               <!--suppress UnresolvedMavenProperty -->
-              <suiteXmlFile>src/test/resources/testsuites/${suite}.xml</suiteXmlFile>
+              <suiteXmlFile>src/test/resources/${suite}.xml</suiteXmlFile>
             </suiteXmlFiles>
           </configuration>
         </plugin>
