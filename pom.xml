@@ -93,7 +93,7 @@
           <configuration>
             <suiteXmlFiles>
               <!--suppress UnresolvedMavenProperty -->
-              <suiteXmlFile>src/test/resources/${suite}.xml</suiteXmlFile>
+              <suiteXmlFile>src/test/java/resources/${suite}.xml</suiteXmlFile>
             </suiteXmlFiles>
           </configuration>
         </plugin>
