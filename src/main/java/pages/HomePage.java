@@ -3,6 +3,7 @@ package pages;
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
 import com.codeborne.selenide.WebDriverRunner;
+import io.qameta.allure.Step;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 
@@ -24,6 +25,7 @@ public class HomePage {
 
     private String openCartBtn = "//button[@class = 'sc-1h98xa9-0 gFkyvN']";
 
+    @Step(value = "home")
     public void openUrl() {
         open("https://react-shopping-cart-67954.firebaseapp.com/");
     }
@@ -36,6 +38,7 @@ public class HomePage {
         return $$(By.cssSelector(item)).texts();
     }
 
+    @Step(value = "cart")
     public CartPage clickAllAddToCartBtn() {
         ElementsCollection list= $$(By.xpath(addToCartBtn));
         for (SelenideElement items : list){
@@ -56,6 +59,7 @@ public class HomePage {
         Thread.sleep(5000);
     }
 
+    @Step(value = "cart")
     public CartPage clickAddToCartFirstBtn() {
         $(By.xpath(addToCartBtn)).click();
         return new CartPage();

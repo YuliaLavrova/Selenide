@@ -2,6 +2,9 @@ package org.example;
 
 import com.codeborne.selenide.ElementsCollection;
 import com.codeborne.selenide.SelenideElement;
+import com.codeborne.selenide.logevents.SelenideLogger;
+import io.qameta.allure.Step;
+import io.qameta.allure.selenide.AllureSelenide;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.JavascriptExecutor;
@@ -18,6 +21,14 @@ import static com.codeborne.selenide.Condition.*;
 public class ShoppingTest {
 
     private static final Logger LOGGER = LogManager.getLogger(ShoppingTest.class);
+    
+    @BeforeMethod
+    public void logReport() {
+        SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
+                .screenshots(false)
+                .savePageSource(true)
+        );
+    }
 
     @Test
     void addToCartTest() {
