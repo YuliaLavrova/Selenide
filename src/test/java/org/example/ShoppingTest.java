@@ -7,6 +7,7 @@ import io.qameta.allure.Step;
 import io.qameta.allure.selenide.AllureSelenide;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import org.example.utils.listeners.LocalListener;
 import org.openqa.selenium.JavascriptExecutor;
 import org.testng.Assert;
 import org.testng.annotations.*;
@@ -25,9 +26,10 @@ public class ShoppingTest {
     @BeforeMethod
     public void logReport() {
         SelenideLogger.addListener("AllureSelenide", new AllureSelenide()
-                .screenshots(false)
+                .screenshots(true)
                 .savePageSource(true)
         );
+        SelenideLogger.addListener("LocalListener", new LocalListener());
     }
 
     @Test

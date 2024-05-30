@@ -16,7 +16,7 @@
     <maven.compiler.target>17</maven.compiler.target>
     <!-- GitHub server corresponds to entry in ~/.m2/settings.xml -->
     <github.global.server>github</github.global.server>
-    <allure.version>2.24.0</allure.version>
+    <allure.version>2.27.0</allure.version>
     <aspectj.version>1.9.20.1</aspectj.version>
   </properties>
 
@@ -25,7 +25,7 @@
       <dependency>
         <groupId>io.qameta.allure</groupId>
         <artifactId>allure-bom</artifactId>
-        <version>2.24.0</version>
+        <version>2.27.0</version>
         <type>pom</type>
         <scope>import</scope>
       </dependency>
@@ -83,9 +83,10 @@
       <version>5.2.5</version>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
     <dependency>
       <groupId>org.apache.poi</groupId>
-      <artifactId>poi-ooxml</artifactId>
+      <artifactId>poi</artifactId>
       <version>5.2.5</version>
     </dependency>
 
@@ -100,16 +101,18 @@
       <artifactId>allure-testng</artifactId>
     </dependency>
 
+    <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-testng -->
+    <dependency>
+      <groupId>io.qameta.allure</groupId>
+      <artifactId>allure-testng</artifactId>
+      <version>2.27.0</version>
+    </dependency>
+
+    <!-- https://mvnrepository.com/artifact/io.qameta.allure/allure-selenide -->
     <dependency>
       <groupId>io.qameta.allure</groupId>
       <artifactId>allure-selenide</artifactId>
       <version>2.27.0</version>
-    </dependency>
-
-    <dependency>
-      <groupId>com.codeborne</groupId>
-      <artifactId>selenide</artifactId>
-      <version>7.3.1</version>
     </dependency>
 
   </dependencies>
